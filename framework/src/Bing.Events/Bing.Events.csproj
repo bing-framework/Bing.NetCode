@@ -5,4 +5,19 @@
 
   <Import Project="..\..\..\framework.props" />
 
+  <ItemGroup>
+    <Compile Update="Properties\EventBusResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EventBusResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\EventBusResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EventBusResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>
